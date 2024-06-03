@@ -26,7 +26,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build with Maven
-        run: mvn -B package --file demo/pom.xml
+        run: mvn -B package --file pom.xml
 
       - name: Cache Maven packages
         uses: actions/cache@v3
@@ -36,7 +36,7 @@ jobs:
           restore-keys: ${{ runner.os }}-maven
 
       - name: Run tests
-        run: mvn test --file demo/pom.xml
+        run: mvn test --file pom.xml
 
   build_and_push_docker:
     runs-on: ubuntu-latest
