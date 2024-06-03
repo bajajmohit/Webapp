@@ -63,11 +63,10 @@ jobs:
       - name: Setup AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
         with:
+          role-to-assume: arn:aws:iam::551987179582:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS
 #          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
 #          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
-          role-to-assume: arn:aws:iam::551987179582:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS
-          id-token: write
           
 #      - name: Setup kubectl
 #        uses: actions/setup-kubectl@v3
