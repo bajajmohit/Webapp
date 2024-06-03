@@ -3,13 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main
-env:
-  DOCKER_IMAGE: your-docker-image-name
-  CONTAINER_REGISTRY: MY_ECR_REPOSITORY
-  EKS_CLUSTER_NAME: your-eks-cluster-name
-  AWS_REGION: ap-south-1
-  TF_WORKING_DIR: terraform-directory      
+      - main     
 
 jobs:
   build:
@@ -67,7 +61,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup AWS CLI
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
