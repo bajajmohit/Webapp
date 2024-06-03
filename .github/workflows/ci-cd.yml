@@ -24,6 +24,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
+      - name: maven
+        run: mvn command
 
       - name: Cache Maven packages
         uses: actions/cache@v3
