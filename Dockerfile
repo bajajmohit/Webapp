@@ -1,3 +1,11 @@
+FROM maven:3.6.3-openjdk-14-slim AS build
+RUN mkdir -p /workspace
+WORKDIR /workspace
+COPY pom.xml /workspace
+COPY src /workspace/src
+RUN mvn -B package --file demo/pom.xml -DskipTests
+
+
 # Use an official JDK runtime as a parent image
 FROM openjdk:17-jdk-slim
 
