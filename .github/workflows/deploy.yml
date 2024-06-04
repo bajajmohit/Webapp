@@ -5,7 +5,10 @@ on:
   push:
     branches: [ main ]
 
-
+env:
+  ECR_REPOSITORY: webapp
+  EKS_CLUSTER_NAME: Kubernetes-demo 
+  AWS_REGION: us-east-1
 jobs:
   
   build:
