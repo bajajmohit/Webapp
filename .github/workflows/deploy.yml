@@ -7,7 +7,7 @@ on:
 
 env:
   ECR_REPOSITORY: heman
-  EKS_CLUSTER_NAME: Kubernetes-demo 
+  EKS_CLUSTER_NAME: webapp
   AWS_REGION: ap-south-1
 jobs:
   
