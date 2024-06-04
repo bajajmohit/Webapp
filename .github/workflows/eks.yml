@@ -8,7 +8,7 @@ permissions:
   id-token: write
   contents: read
 env:
-  ECR_REPOSITORY: 551987179582.dkr.ecr.us-east-1.amazonaws.com/githubaction
+  ECR_REPOSITORY: 551987179582.dkr.ecr.us-east-1.amazonaws.com
   EKS_CLUSTER_NAME: Kubernetes-demo
   AWS_REGION: ap-south-1
 jobs:
