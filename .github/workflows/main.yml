@@ -7,6 +7,10 @@ on:
 permissions:
   id-token: write
   contents: read
+env:
+  ECR_REPOSITORY: githubaction
+  EKS_CLUSTER_NAME: Kubernetes-demo 
+  AWS_REGION: ap-south-1 
 jobs:
   build:
     runs-on: ubuntu-latest
