@@ -39,7 +39,6 @@ jobs:
 
       - name: Run tests
         run: mvn test --file pom.xml
-
   build_and_push_docker:
     runs-on: ubuntu-latest
     needs: build
