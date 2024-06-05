@@ -15,8 +15,8 @@ spec:
         app: webapp
     spec:
       containers:
-        - name: webapp
-          image: 551987179582.dkr.ecr.ap-south-1.amazonaws.com/heman:ec79279
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 8080
+      - name: webapp
+        image: 551987179582.dkr.ecr.ap-south-1.amazonaws.com/heman:b412b7a
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
