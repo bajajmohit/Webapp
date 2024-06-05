@@ -8,5 +8,5 @@ RUN mvn -B package --file pom.xml
 
 FROM openjdk:17-slim
 COPY --from=build /workspace/target/*jar-with-dependencies.jar app.jar
-EXPOSE 6379
+EXPOSE 8080
 ENTRYPOINT ["java","-jar","app.jar"]
