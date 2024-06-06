@@ -13,6 +13,8 @@ Packaging: Jar
 Java: 17
 Add Dependencies:
 Spring Web
+
+
 ==================================
 Explanation
 Triggers:
@@ -40,6 +42,8 @@ Sets up Terraform.
 Initializes and applies the Terraform configuration.
 Updates the EKS deployment with the new Docker image.
 =====================
+
+
 Create IAM User and Generate Access Keys
 Complete the process and download the credentials.csv file which contains your Access Key ID and Secret Access Key.
 3. Configure AWS CLI
