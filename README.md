@@ -15,7 +15,6 @@ Add Dependencies:
 Spring Web
 
 
-==================================
 Explanation
 Triggers:
 
@@ -41,7 +40,7 @@ Configures AWS credentials using secrets.
 Sets up Terraform.
 Initializes and applies the Terraform configuration.
 Updates the EKS deployment with the new Docker image.
-=====================
+
 
 
 Create IAM User and Generate Access Keys
